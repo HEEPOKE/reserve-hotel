@@ -1,0 +1,21 @@
+.got {
+    position: relative !important;
+    bottom  : 10px;
+}
+
+.boxx {
+    height: 70px;
+}
+
+.topicChart {
+    text-align: center;
+}
+
+.reserveChart {
+    height: 650px;
+}
+
+.poChart {
+    position: relative !important;
+    bottom  : 10px;
+}

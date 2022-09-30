@@ -1,0 +1,17 @@
+.chartreport {
+    /* width: 580px; */
+    height: 60vh !important;
+    padding: 30px;
+}
+
+.bgtable {
+    background-color: #0194F3 !important;
+}
+
+.chart-h{
+    height: 60vh !important;
+}
+
+.chuchu {
+    visibility: hidden !important;
+}

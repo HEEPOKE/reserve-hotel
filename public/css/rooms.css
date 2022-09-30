@@ -1,0 +1,199 @@
+.imgroom {
+    width : 210px;
+    height: 150px;
+}
+
+.upimgroom {
+    padding: 50px 10%;
+}
+
+.box {
+    position  : relative;
+    background: #ffffff;
+    width     : 100%;
+}
+
+.box-header {
+    color        : #444;
+    display      : block;
+    padding      : 10px;
+    position     : relative;
+    border-bottom: 1px solid #f4f4f4;
+    margin-bottom: 10px;
+}
+
+.box-tools {
+    position: absolute;
+    right   : 10px;
+    top     : 5px;
+}
+
+.dropzone-wrapper {
+    border  : 2px dashed #91b0b3;
+    color   : #92b0b3;
+    position: relative;
+    height  : 150px;
+}
+
+.dropzone-desc {
+    position  : absolute;
+    margin    : 0 auto;
+    left      : 0;
+    right     : 0;
+    text-align: center;
+    width     : 40%;
+    top       : 50px;
+    font-size : 16px;
+}
+
+.dropzone,
+.dropzone:focus {
+    position: absolute;
+    outline : none !important;
+    width   : 100%;
+    height  : 150px;
+    cursor  : pointer;
+    opacity : 0;
+}
+
+.dropzone-wrapper:hover,
+.dropzone-wrapper.dragover {
+    background: #ecf0f5;
+}
+
+.preview-zone {
+    text-align: center;
+}
+
+.preview-zone .box {
+    box-shadow   : none;
+    border-radius: 0;
+    margin-bottom: 0;
+}
+
+.file-drop-area {
+    position        : relative;
+    padding         : 2rem 1rem;
+    transition      : border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    border          : 2px dashed #dae1e7;
+    background-color: #fff;
+    text-align      : center;
+    cursor          : pointer;
+}
+
+.file-drop-area .file-drop-icon {
+    display      : block;
+    margin-bottom: 0.75rem;
+    color        : #aeb4be;
+    font-size    : 1.625rem;
+}
+
+.file-drop-area .file-drop-message {
+    display      : block;
+    font-size    : .875rem;
+    margin-bottom: 1.25rem;
+}
+
+.file-drop-area .file-drop-input {
+    display         : block;
+    position        : absolute;
+    top             : 0;
+    left            : 0;
+    width           : 100%;
+    height          : 100%;
+    background-color: transparent;
+    opacity         : 0;
+    outline         : none;
+    cursor          : pointer;
+    z-index         : 2;
+}
+
+.file-drop-area .btn {
+    position: relative;
+    z-index : 3;
+}
+
+.file-drop-area .file-drop-preview {
+    max-width    : 16rem;
+    margin-right : auto;
+    margin-bottom: 0.75rem;
+    margin-left  : auto;
+}
+
+img,
+figure {
+    max-width     : 100%;
+    height        : auto;
+    vertical-align: middle;
+}
+
+.carousel-inner {
+    padding: 1em;
+}
+
+.card {
+    margin    : 0 0.5em;
+    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+    border    : none;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: #e1e1e1;
+    width           : 6vh;
+    height          : 6vh;
+    border-radius   : 50%;
+    top             : 50%;
+    transform       : translateY(-50%);
+}
+
+@media (min-width: 768px) {
+    .carousel-item {
+        margin-right: 0;
+        flex        : 0 0 33.333333%;
+        display     : block;
+    }
+
+    .carousel-inner {
+        display: flex;
+    }
+}
+
+.card .img-wrapper {
+    max-width      : 100%;
+    height         : 13em;
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+}
+
+.card img {
+    max-height: 100%;
+}
+
+@media (max-width: 767px) {
+    .card .img-wrapper {
+        height: 10em;
+    }
+}
+
+.flowfiximg {
+    height: 200px;
+}
+
+.flowfiximg2 {
+    height: 200px;
+}
+
+.flowimg {
+    height: 280px;
+}
+
+.showimgroom {
+    height: 200px;
+}
+
+.listroom {
+    list-style-type: disc;
+}
+

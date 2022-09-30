@@ -1,0 +1,118 @@
+  /* Make it looks good on CodePen */
+
+.sonar-wrapper {
+    height: 100%;
+}
+
+/* Prevent scrollbars to appear when waves go out of bound */
+.sonar-wrapper {
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+    padding: 1rem 0;
+}
+
+/* The circle */
+.sonar-emitter {
+    position: relative;
+    margin: 0 auto;
+    width: 25px;
+    height: 25px;
+    border-radius: 9999px;
+    background-color: HSL(93, 86%, 53%);
+}
+
+/* The circle */
+.sonar-emitter2 {
+    position: relative;
+    margin: 0 auto;
+    width: 25px;
+    height: 25px;
+    border-radius: 9999px;
+    background-color: HSL(12, 91%, 48%);
+}
+
+/* The circle */
+.sonar-emitter3 {
+    position: relative;
+    margin: 0 auto;
+    width: 25px;
+    height: 25px;
+    border-radius: 9999px;
+    background-color: HSL(39, 100%, 50%);
+}
+
+/* the 'wave', same shape and size as its parent */
+.sonar-wave {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 9999px;
+    background-color: HSL(93, 86%, 53%);
+    opacity: 0;
+    z-index: -1;
+    pointer-events: none;
+}
+
+/* the 'wave', same shape and size as its parent */
+.sonar-wave2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 9999px;
+    background-color: HSL(12, 91%, 48%);
+    opacity: 0;
+    z-index: -1;
+    pointer-events: none;
+}
+
+/* the 'wave', same shape and size as its parent */
+.sonar-wave3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 9999px;
+    background-color: HSL(39, 100%, 50%);
+    opacity: 0;
+    z-index: -1;
+    pointer-events: none;
+}
+
+/*
+Animate!
+NOTE: add browser prefixes where needed.
+*/
+.sonar-wave {
+    animation: sonarWave 2s linear infinite;
+}
+
+.sonar-wave2 {
+    animation: sonarWave 2s linear infinite;
+}
+
+.sonar-wave3 {
+    animation: sonarWave 2s linear infinite;
+}
+
+@keyframes sonarWave {
+    from {
+        opacity: 0.4;
+    }
+
+    to {
+        transform: scale(3);
+        opacity: 0;
+    }
+}
+
+.btwarning{
+    color: #212529 !important;
+    background-color: #ffc107 !important;
+    border-color: #ffc107 !important;
+}
