@@ -143,19 +143,20 @@
                         <form action="{{ url('insert-booking') }}" method="POST">
                             @csrf
                             @if ($catagoriesall === '')
-                            @php
-                            $catagoriessum = 1;
-                            @endphp
+                                {{-- @php
+                                    $catagoriessum = 1;
+                                @endphp --}}
                             @else
-                            @foreach ($catagoriesall as $catagoriesallrow)
-                            @endforeach
-                            @php
+                                {{-- @foreach ($catagoriesall as $catagoriesallrow)
+                            @endforeach --}}
+                                {{-- @php
                                 $catagoriessum = $catagoriesallrow->id+1;
-                            @endphp
+                            @endphp --}}
                             @endif
 
 
-                            <input type="hidden" name="booking_id" value="{{ date('dmY') }}{{ $catagoriessum }}{{ Auth::user()->company_id }}">
+                            <input type="hidden" name="booking_id"
+                                value="{{ date('dmY') }}{{ Auth::user()->company_id }}">
                             <input type="hidden" name="hotel_id" value="{{ Auth::user()->company_id }}">
                             <div class="modal-body">
                                 <div class="mt-1">
@@ -170,7 +171,7 @@
                                     </select>
                                 </div>
 
-                            {{-- @if ($message = Session::get('status'))
+                                {{-- @if ($message = Session::get('status'))
                                 <script>
                                     Swal.fire({
                                         title: 'เพิ่มข้อมูลการจองสำเร็จ!',
@@ -220,8 +221,8 @@
 
 
                                 <td class="text-center">
-                                    <a type="button" class="btn btn-warning" href="{{ url('detailreserve', $row->booking_id) }}"><i
-                                        class="fas fa-edit"></i></a>
+                                    <a type="button" class="btn btn-warning"
+                                        href="{{ url('detailreserve', $row->booking_id) }}"><i class="fas fa-edit"></i></a>
                                     {{-- <button type="button" class="btn btn-danger" data-toggle="modal"
                                         data-target="#deletereserveModal{{ $row->id }}"><i
                                             class="fas fa-trash-alt"></i></button> --}}
@@ -236,7 +237,6 @@
                         $slipimg = explode(',', $checkpayment_slip);
                         $payment_slip = implode(',', $slipimg);
                     @endphp
-
                     @endforeach
                 </table>
                 <div class="float-end mt-2 mr-3">
